@@ -6,6 +6,7 @@ let shops = [
     {
         id: 1,
         name: "МАГАЗ-1",
+        address: "г.Самара, Московское шоссе, 81А ",
         coords: [53.23349978768868,50.199472871048975],
         product_count: 5,
         details_link: "https://cdn1.ozone.ru/s3/multimedia-9/6015300333.jpg"
@@ -13,6 +14,7 @@ let shops = [
     {
         id: 2,
         name: "МАГАЗ-2",
+        address: "г.Самара, Московское шоссе, 106",
         coords: [53.22393051205803,50.19029310235747],
         product_count: 100,
         details_link: "https://cdn1.ozone.ru/s3/multimedia-9/6015300333.jpg"
@@ -20,6 +22,7 @@ let shops = [
     {
         id: 3,
         name: "МАГАЗ-3",
+        address: "г.Самара, Дыбенко, 30",
         coords: [53.20759674153676,50.19598741688122],
         product_count: 7,
         details_link: "https://cdn1.ozone.ru/s3/multimedia-9/6015300333.jpg"
@@ -27,6 +30,7 @@ let shops = [
     {
         id: 4,
         name: "МАГАЗ-4",
+        address: "г.Самара, проспект Кирова, 147",
         coords: [53.22074453137698,50.26229162372937],
         product_count: 3,
         details_link: "https://cdn1.ozone.ru/s3/multimedia-9/6015300333.jpg"
@@ -89,7 +93,7 @@ function fillShopSelect() {
     shops.forEach(shop => {
       const option = document.createElement("option");
       option.value = shop.id;
-      option.textContent = shop.name;
+      option.textContent = shop.name + ', ' + shop.address;
       shopSelect.appendChild(option);
     })
 }
