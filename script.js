@@ -92,13 +92,6 @@ function fillShopSelect() {
       option.textContent = shop.name;
       shopSelect.appendChild(option);
     })
-
-    // shopSelect.addEventListener('change', function() {
-    //     const selectedShop = shops.find(shop => shop.id == this.value);
-    //     if (selectedShop) {
-    //         map.setCenter(selectedShop.coords, 15);
-    //     }
-    // });
 }
 
 fillShopSelect();
