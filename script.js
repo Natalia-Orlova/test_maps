@@ -70,7 +70,10 @@ function init() {
     shopSelect.addEventListener('change', function() {
         const selectedShop = shops.find(shop => shop.id == this.value);
         if (selectedShop) {
-            map.setCenter(selectedShop.coords, 16);
+            map.setCenter(selectedShop.coords, 16, {
+                duration: 1000,
+                timingFunction: 'ease-in-out'
+            });
         }
     });
 
