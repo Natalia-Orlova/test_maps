@@ -35,6 +35,30 @@ let shops = [
         product_count: 3,
         details_link: "https://cdn1.ozone.ru/s3/multimedia-9/6015300333.jpg"
     },
+    {
+        id: 5,
+        name: "МАГАЗ-4",
+        address: "Московское шоссе, 185А",
+        coords: [53.248868002455744,50.22097051546659],
+        product_count: 20,
+        details_link: "https://cdn1.ozone.ru/s3/multimedia-9/6015300333.jpg"
+    },
+    {
+        id: 6,
+        name: "МАГАЗ-5",
+        address: "Ново-Садовая, 160М",
+        coords: [53.224819946311406,50.1676354794404],
+        product_count: 34,
+        details_link: "https://cdn1.ozone.ru/s3/multimedia-9/6015300333.jpg"
+    },
+    {
+        id: 7,
+        name: "МАГАЗ-6",
+        address: "Московское шоссе, 18-й км, 23",
+        coords: [53.275627999734745,50.272617331130824],
+        product_count: 2,
+        details_link: "https://cdn1.ozone.ru/s3/multimedia-9/6015300333.jpg"
+    }
 ];
 
 function init() {
